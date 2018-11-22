@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'dptm6'
+require 'dptm6/cli'
+
+DPTM6::CLI.new(ARGV).exec

@@ -1,7 +1,7 @@
 require 'zlib'
-require './path'
+require 'dptm6/path'
 
-module PDF
+module DPTM6; module PDF
   REGEXP_DATA = /\A(?:(?'dict'<<(?>\g'dict'|[^<>]++)*+>>\s*+)|(?'num'\s*\d+\s*+))/m
 
   class File
@@ -386,4 +386,4 @@ startxref
       self
     end
   end
-end
+end; end

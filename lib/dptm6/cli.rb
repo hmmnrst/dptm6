@@ -1,7 +1,7 @@
 require 'zlib'
-require './pdf'
+require 'dptm6/pdf'
 
-class CLI
+module DPTM6; class CLI
   def initialize(args)
     @options = { :compression_level => Zlib::DEFAULT_COMPRESSION, :optimization_level => 1 }
     @files = []
@@ -120,9 +120,4 @@ usage: ruby #{File.basename(__FILE__)} [-C[n]] [-O[n]] [-o output.pdf] input.pdf
                example: input.pdf[0,5...2,8..-1]   #=> [0,5,4,3,8,9,...,n-1]
     EOS
   end
-end
-
-
-if ($0 == __FILE__)
-  CLI.new(ARGV).exec
-end
+end; end

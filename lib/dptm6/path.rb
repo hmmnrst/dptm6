@@ -1,4 +1,4 @@
-class Path
+class DPTM6::Path
   class Node
     attr_reader :x, :y, :op
     attr_accessor :prev, :next
